@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(rgb(128, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  position: relative;
+}
+.cat-block {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.cat-block .cat-head,
+.cat-block .cat-eyes,
+.cat-block .clip-path {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  z-index: 2;
+}
+.cat-block .cat-eyes-rect {
+  clip-path: url(#cat_clip_path);
+}
+.cat-block .cat-eyes {
+  z-index: 1;
+}

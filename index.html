@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>眼球跟随鼠标转动</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="cat-block">
+        <img src="img/head.png" alt="cat-head" class="cat-head" />
+        <div class="cat-eyes-rect">
+          <img src="img/eyes.png" alt="cat-eyes" class="cat-eyes" />
+        </div>
+        <svg class="clip-path">
+          <defs>
+            <clipPath id="cat_clip_path">
+              <circle cx="160" cy="265" r="80"></circle>
+              <circle cx="318" cy="265" r="80"></circle>
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
